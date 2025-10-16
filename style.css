@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0e7ef 0%, #f5f9ff 100%);
+  font-family: 'Inter', Arial, sans-serif;
+  color: #161a23;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  margin: 0.2rem 0 1.5rem 0;
+  font-size: 1.1rem;
+  color: #4a5668;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(24, 34, 45, 0.08), 0 1.5px 6px rgba(24, 34, 45, 0.04);
+  border-radius: 1.6rem;
+  padding: 1.5rem;
+  width: 310px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 12px 36px rgba(24, 34, 45, 0.13), 0 3px 12px rgba(24, 34, 45, 0.08);
+  transform: translateY(-6px) scale(1.03);
+}
+
+.card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  background: #e9eef6;
+}
+
+.card h2 {
+  font-size: 1.35rem;
+  margin: 0.25rem 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.card .desc {
+  font-size: 1rem;
+  color: #646b7a;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  min-height: 38px;
+}
+
+.price {
+  font-size: 1.18rem;
+  color: #195cff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.buy-btn {
+  padding: 0.65rem 2rem;
+  background: linear-gradient(90deg, #195cff 0%, #0b7fff 100%);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.05rem;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(25, 92, 255, 0.18);
+  transition: background 0.22s, transform 0.19s;
+}
+
+.buy-btn:hover {
+  background: linear-gradient(90deg, #1661eb 0%, #14a8ff 100%);
+  transform: scale(1.045);
+}
+
+footer {
+  padding: 1rem 0;
+  background: #f4f8fc;
+  font-size: 0.98rem;
+  color: #627998;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .product-container {
+    gap: 1.2rem;
+  }
+  .card {
+    width: 90vw;
+    max-width: 380px;
+  }
+}
