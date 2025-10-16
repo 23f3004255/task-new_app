@@ -1,5 +1,8 @@
-document.querySelectorAll('.buy-btn').forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    alert('Added to cart! This is a demo. Checkout coming soon.');
+document.addEventListener('DOMContentLoaded', function() {
+  var buttons = document.querySelectorAll('.buy-btn');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      alert('Thank you for your interest! Purchase feature coming soon.');
+    });
   });
 });
